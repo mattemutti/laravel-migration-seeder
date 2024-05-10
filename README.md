@@ -70,7 +70,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 # Descrizione esercizio
 
-- Creiamo una tabella trains e relativa Migration
+- Creiamo una tabella trains e relativa Migration	OK
 
 Ogni treno dovrà avere almeno:
 Azienda
