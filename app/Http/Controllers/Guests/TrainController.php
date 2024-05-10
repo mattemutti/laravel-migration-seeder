@@ -24,7 +24,8 @@ class TrainController extends Controller
      */
     public function show(Train $train)
     {
-        dd($train);
+        //dd($train);
+
     }
 
 }

@@ -2,15 +2,15 @@
 
 @section('content')
     <div class="container">
-        <div class="row p-5">
+        <div class="row row-cols-1 row-cols-sm2 row-cols-md-3 row-cols-lg-4 g-5 p-5">
             @forelse ($trains as $train)
                 <div class="col">
-                    <div class="card p-4">
-                        <div>Codice Treno: {{ $train->train_code }}</div>
-                        <div>Agenzia Treno: {{ $train->agency }}</div>
-
-                    </div>
-
+                    <a class="text-decoration-none" href="{{ route('guests.trains.show', $train) }}">
+                        <div class="card p-4">
+                            <div>Codice Treno: {{ $train->train_code }}</div>
+                            <div>Agenzia Treno: {{ $train->agency }}</div>
+                        </div>
+                    </a>
                 </div>
             @empty
 

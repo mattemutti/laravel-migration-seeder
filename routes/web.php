@@ -18,5 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/trains', [TrainController::class, 'index']);
-Route::get('/trains/{train}', [TrainController::class, 'show']);
+Route::get('/trains', [TrainController::class, 'index'])->name('guests.trains.index');
+Route::get('/trains/{train}', [TrainController::class, 'show'])->name('guests.trains.show');
