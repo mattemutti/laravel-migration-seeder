@@ -13,7 +13,10 @@ class TrainController extends Controller
      */
     public function index()
     {
-        dd(Train::all());
+        //dd(Train::all());
+        $trains = train::all();
+
+        return view('guests.trains.index', compact('trains'));
     }
 
     /**
@@ -21,7 +24,7 @@ class TrainController extends Controller
      */
     public function show(Train $train)
     {
-        //
+        dd($train);
     }
 
 }
