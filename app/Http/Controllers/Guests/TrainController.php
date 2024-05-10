@@ -26,6 +26,8 @@ class TrainController extends Controller
     {
         //dd($train);
 
+
+        return view('guests.trains.show', compact('train'));
     }
 
 }
