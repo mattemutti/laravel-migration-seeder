@@ -16,8 +16,10 @@ return new class extends Migration {
             $table->string('agency', 50)->nullable();
             $table->string('departure_station', 100)->nullable();
             $table->string('arrival_station', 100)->nullable();
-            $table->dateTime('departure_time', $precision = 0)->nullable();
-            $table->dateTime('arrival_time', $precision = 0)->nullable();
+            $table->date('departure_date')->nullable();
+            $table->time('departure_hour')->nullable();
+            $table->date('arrival_date')->nullable();
+            $table->time('arrival_hour')->nullable();
             $table->integer('carriage_number')->nullable();
             $table->boolean('in_time')->default(1)->nullable();
             $table->boolean('deleted')->default(0)->nullable();

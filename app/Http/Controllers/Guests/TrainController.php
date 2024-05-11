@@ -14,6 +14,19 @@ class TrainController extends Controller
     public function index()
     {
         //dd(Train::all());
+        $trains = train::where('departure_date', '2024-05-11')->get();
+        //$trains = train::all();
+
+        return view('layouts.welcome', compact('trains'));
+    }
+
+    /**
+     * Display a listing of the resource.
+     */
+    public function trains()
+    {
+        //dd(Train::all());
+        // $trainsToday = train::;
         $trains = train::all();
 
         return view('guests.trains.index', compact('trains'));
