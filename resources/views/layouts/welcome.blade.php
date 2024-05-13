@@ -2,7 +2,7 @@
 
 
 @section('content')
-    <div class="container text-center py-5">
+    <div class="container text-center py-5 pt-5">
         <a href="{{ route('guests.trains.index') }}" class="text-decoration-none ">Tutti i Treni se Vuoi...</a>
         <h1 class="py-5">Treni di Oggi</h1>
 
