@@ -40,11 +40,11 @@ class TrainTableSeeder extends Seeder
             $train = new Train();
             $train->train_code = $faker->numerify('tr####');
             $train->agency = $faker->word();
-            $train->departure_station = $faker->word();
-            $train->arrival_station = $faker->word();
-            $train->departure_date = $faker->date('Y-m-d');
+            $train->departure_station = $faker->randomKey(['Desenzano' => 1, 'Roma' => 2, 'Verona' => 3, 'Bologna' => 4, 'Brescia' => 5, 'Bergamo' => 6, 'Napoli' => 7, 'Rimini' => 8]);
+            $train->arrival_station = $faker->randomKey(['Desenzano' => 1, 'Roma' => 2, 'Verona' => 3, 'Bologna' => 4, 'Brescia' => 5, 'Bergamo' => 6, 'Napoli' => 7, 'Rimini' => 8]);
+            $train->departure_date = $faker->date('2024-05-d');
             $train->departure_hour = $faker->time();
-            $train->arrival_date = $faker->date('Y-m-d');
+            $train->arrival_date = $train->departure_date;
             $train->arrival_hour = $faker->time();
             $train->carriage_number = $faker->numberBetween(1, 12);
             $train->in_time = $faker->boolean();

@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container py-4">
-        <a href="{{ route('layouts.welcome') }}" class="">Back</a>
+
         <div class="text-center">
             <h1>Tutti i Treni</h1>
         </div>
