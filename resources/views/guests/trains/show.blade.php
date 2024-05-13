@@ -12,11 +12,11 @@
                 </div>
                 <div class="card-body">
                     <div>Partenza: {{ $train->departure_station }}</div>
-                    <div> {{ $train->departure_date }} - {{ $train->departure_hour }} </div>
+                    <div> {{ $train->departure_date }} Orario: {{ $train->departure_hour }} </div>
                 </div>
                 <div class="card-body">
                     <div>Arrivo: {{ $train->arrival_station }}</div>
-                    <div> {{ $train->arrival_date }} - {{ $train->arrival_hour }}</div>
+                    <div> {{ $train->arrival_date }} Orario: {{ $train->arrival_hour }}</div>
                 </div>
             </div>
             <div class="card p-4">
