@@ -91,3 +91,15 @@ Cancellato
 
 - ed un Controller per mostrare nella home page tutti i treni che sono in partenza dalla data odierna.
 
+
+/****************************************************************************/
+
+
+oggi proseguiamo con l'esercizio di ieri Train Station, sempre nella stessa repo: laravel-migration-seeder
+
+
+- Aggiungiamo un seeder per la classe Train usando un array di dati fittizzi fatta a mano.
+  
+
+
+- BONUS: Implementare il seeder tramite FakerPHP
